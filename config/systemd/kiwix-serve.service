@@ -1,0 +1,23 @@
+# ÖRNEK servis. Kurmadan önce kullanıcıyı, ZIM yolunu ve Kiwix seçeneklerini doğrulayın.
+[Unit]
+Description=BilgiKutusu Kiwix Server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/mnt/BilgiKutusu/Wikipedia
+ExecStart=/usr/bin/kiwix-serve --address=127.0.0.1 --port=8080 --urlRootLocation=/kiwix/ /mnt/BilgiKutusu/Wikipedia/
+Restart=on-failure
+RestartSec=5
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+ReadOnlyPaths=/mnt/BilgiKutusu/Wikipedia
+
+[Install]
+WantedBy=multi-user.target

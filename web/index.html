@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b24">
+  <meta name="description" content="BilgiKutusu Pro — yerel ağda çalışan çevrimdışı bilgi kütüphanesi.">
+  <title>BilgiKutusu Pro — Çevrimdışı Bilgi Merkezi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='86'%3E📚%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./" aria-label="BilgiKutusu Pro ana sayfa">
+        <span class="brand-mark" aria-hidden="true">B</span>
+        <span>BilgiKutusu <span class="brand-accent">Pro</span></span>
+      </a>
+      <div class="network-status"><span class="status-dot" aria-hidden="true"></span><span>Yerel ağ portalı</span></div>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> BİLGİYE ÇEVRİMDIŞI ERİŞİM</p>
+        <h1 id="hero-title">Merak ettiğin her şey,<br><span>bir arada.</span></h1>
+        <p class="hero-description">İnternet bağlantısı olmadan ansiklopedilere, kitaplara, eğitim kaynaklarına ve arşivine ulaş.</p>
+      </div>
+      <div class="search-panel">
+        <label for="search">Kütüphanede ara</label>
+        <div class="search-field">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Bir kaynak veya kategori yaz..." autocomplete="off" spellcheck="false">
+          <kbd aria-hidden="true">/</kbd>
+          <button id="clear-search" class="clear-search" type="button" aria-label="Aramayı temizle" hidden>×</button>
+        </div>
+        <p class="search-help">Hızlı erişim için <kbd>/</kbd> tuşunu kullan.</p>
+      </div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="library" aria-labelledby="resources-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">KEŞFET</p>
+          <h2 id="resources-title">Bilgi kütüphanesi</h2>
+          <p class="section-description">İçerik koleksiyonlarına tek noktadan eriş.</p>
+        </div>
+        <p class="result-count" id="counter" aria-live="polite">8 kaynak</p>
+      </div>
+
+      <div class="cards" id="resources">
+        <a class="card card-featured" data-category="ansiklopedi" data-search="wikipedia ansiklopedi kiwix encyclopedia" href="/kiwix/">
+          <span class="card-icon" aria-hidden="true">◎</span><span class="card-tag">ANSİKLOPEDİ</span>
+          <strong>Wikipedia ve Kiwix</strong><span class="card-description">Çevrimdışı ansiklopedi arşivini keşfet.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="kitap" data-search="kitap kitaplar pdf okuma ebook e kitap" href="/kutuphane/Kitaplar/">
+          <span class="card-icon" aria-hidden="true">▤</span><span class="card-tag">OKUMA</span>
+          <strong>Kitaplar</strong><span class="card-description">Dijital kitap ve doküman koleksiyonu.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="tarım" data-search="tarım tarim ziraat bitki çiftçilik hayvancılık" href="/kutuphane/Tarim/">
+          <span class="card-icon" aria-hidden="true">✳</span><span class="card-tag">DOĞA</span>
+          <strong>Tarım</strong><span class="card-description">Bitki yetiştiriciliği ve tarımsal kaynaklar.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="balıkçılık" data-search="balıkçılık balikcilik balık balik olta deniz" href="/kutuphane/Balikcilik/">
+          <span class="card-icon" aria-hidden="true">≋</span><span class="card-tag">DOĞA</span>
+          <strong>Balıkçılık</strong><span class="card-description">Balıkçılık ve su yaşamı üzerine kaynaklar.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="eğitim" data-search="eğitim egitim ders video videolar öğrenme okul" href="/kutuphane/EgitimVideolari/">
+          <span class="card-icon" aria-hidden="true">⌁</span><span class="card-tag">ÖĞRENME</span>
+          <strong>Eğitim videoları</strong><span class="card-description">Dersler ve çevrimdışı eğitim içerikleri.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="harita" data-search="harita haritalar maps coğrafya yol atlas" href="/kutuphane/Haritalar/">
+          <span class="card-icon" aria-hidden="true">⌖</span><span class="card-tag">KEŞİF</span>
+          <strong>Haritalar</strong><span class="card-description">Çevrimdışı harita ve coğrafya arşivi.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="web arşivi" data-search="web arşivi arsivi internet sayfa site kaydedilmiş" href="/kutuphane/WebArsivi/">
+          <span class="card-icon" aria-hidden="true">▧</span><span class="card-tag">ARŞİV</span>
+          <strong>Web arşivi</strong><span class="card-description">Kaydedilmiş web sayfaları ve kaynaklar.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="card" data-category="medya" data-search="film filmler dizi diziler medya belgesel video" href="/kutuphane/Filmler/">
+          <span class="card-icon" aria-hidden="true">▷</span><span class="card-tag">MEDYA</span>
+          <strong>Medya arşivi</strong><span class="card-description">Yerel film, dizi ve belgesel koleksiyonu.</span><span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div id="empty" class="empty-state" hidden>
+        <span aria-hidden="true">⌕</span><strong>Sonuç bulunamadı</strong>
+        <p>Farklı bir kelime deneyebilir veya aramayı temizleyebilirsin.</p>
+      </div>
+      <p class="library-note"><span aria-hidden="true">ⓘ</span> Kütüphane bağlantıları, Raspberry Pi üzerindeki içeriklerin ve sunucu yollarının yapılandırılmış olmasını gerektirir.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="./">BilgiKutusu <span>Pro</span></a>
+      <p>Bilgiye erişim, internet bağlantısına bağlı olmamalı.</p>
+      <span class="footer-meta">Yerel ağda çalışır · Açık kaynak</span>
+    </div>
+  </footer>
+</body>
+</html>

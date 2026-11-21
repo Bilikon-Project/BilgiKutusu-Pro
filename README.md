@@ -104,6 +104,8 @@ This project is released under the [MIT License](LICENSE).
 > **方針:**
 > プロジェクトを立ち上げただけで責任を放棄し、「Linuxが使えるから」という理由で作業や後処理をすべて押し付ける行為には一切応じない。私は誰の便利屋でもない。各自が自分の尻拭いをすること。これ以上の関与は終了する。
 
+[all eyes on me](https://open.spotify.com/track/7e4OpsQwklauQSXlBvM5WD?si=7uF29Bw4SkSoZ1sVp22iZg&utm_source=copy-link)
+
 
 
 
